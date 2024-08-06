@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/media-queries.css" />
+        <script src="./scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="sticky-header">
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img
+                            src="./assets/images/logo/digital-dreams-logo.svg"
+                            alt=""
+                        />
+                    </a>
+                </div>
+                <ul class="nav-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#partner-reviews">Partners</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact-form-container">Contact</a></li>
+                </ul>
+                <div class="toggle-nav">
+                    <img src="./assets/images/header/menu.svg" alt="" />
+                </div>
+            </nav>
+            <div class="dropdown-nav">
+                <ul class="nav-ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#partner-reviews">Partners</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact-form-container">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="hero">
+                <!-- carousel -->
+                <div class="carousel">
+                    <!-- list item -->
+                    <div class="list">
+                        <div class="item">
+                            <img src="img/img-3.jpg" />
+                            <div class="content">
+                                <div class="title">DIGITAL DREAMS</div>
+                                <div class="topic">ABOUT US</div>
+                                <div class="des">
+                                    Welcome to our world of digital innovation
+                                    and creativity. At DigitalDreams, we're not
+                                    just a team; we're dream weavers,
+                                    transforming visions into captivating
+                                    digital realities.
+                                </div>
+                                <div class="buttons">
+                                    <button>SEE MORE</button>
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/img-4.jpg" />
+                            <div class="content">
+                                <div class="title">DIGITAL DREAMS</div>
+                                <div class="topic">OUR SERVICES</div>
+                                <div class="des">
+                                    We offer a comprehensive suite of services
+                                    designed to elevate your digital presence
+                                    and drive success, whether you're a growing
+                                    business, or an established brand.
+                                </div>
+                                <div class="buttons">
+                                    <button>SEE MORE</button>
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/img-2.jpg" />
+                            <div class="content">
+                                <div class="title">DIGITAL DREAMS</div>
+                                <div class="topic">CONTACT</div>
+                                <div class="des">
+                                    Got an idea, a project, or just curious
+                                    about what we can do for you? Don't be
+                                    shy—drop us a line! Whether it's a digital
+                                    dream or a bold business move, we're here to
+                                    turn ideas into realities.
+                                </div>
+                                <div class="buttons">
+                                    <button>SEE MORE</button>
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/img-1.jpg" />
+                            <div class="content">
+                                <div class="title">DIGITAL DREAMS</div>
+                                <div class="topic">BLOG</div>
+                                <div class="des">
+                                    Explore our blog to dive deeper into the
+                                    world of digital innovation, design trends,
+                                    and business strategies. Whether you're
+                                    looking for tips, inspiration, or the latest
+                                    industry insights, our blog is your go-to
+                                    resource. Stay informed, stay inspired—join
+                                    us on this digital journey!
+                                </div>
+                                <div class="buttons">
+                                    <button>SEE MORE</button>
+                                    <button>SUBSCRIBE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- list thumbnail -->
+                    <div class="thumbnail">
+                        <div class="item">
+                            <img src="img/img-3.jpg" />
+                            <div class="content">
+                                <div class="title">ABOUT US</div>
+                                <div class="description">Description</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/img-4.jpg" />
+                            <div class="content">
+                                <div class="title">OUR SERVICES</div>
+                                <div class="description">Description</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/img-2.jpg" />
+                            <div class="content">
+                                <div class="title">CONTACT</div>
+                                <div class="description">Description</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/img-1.jpg" />
+                            <div class="content">
+                                <div class="title">BLOG</div>
+                                <div class="description">Description</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- next prev -->
+
+                    <div class="arrows">
+                        <button id="prev"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <!-- time running -->
+                    <div class="time"></div>
+                </div>
+            </section>
+            <section
+                id="services"
+                class="hide-content center-content-for-fade-in"
+            >
+                <h2 class="h2-heading">Our Services</h2>
+                <div class="accordion-container">
+                    <div class="accordion-content">
+                        <div class="accordion-heading-block">
+                            <h3 class="accordion-heading">Ideas</h3>
+                            <img
+                                class="accordion-img"
+                                src="./assets/images/services/bulb.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="accordion-text">
+                            <ul>
+                                <li>
+                                    • Idea development and brainstorming
+                                    sessions for projects
+                                </li>
+                                <li>
+                                    • Evaluation and analysis of market trends
+                                    and customer needs
+                                </li>
+                                <li>
+                                    • Conception and development of strategies
+                                    for innovation
+                                </li>
+                                <li>
+                                    • Idea workshops to promote creative
+                                    solutions
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-heading-block">
+                            <h3 class="accordion-heading">Design</h3>
+                            <img
+                                class="accordion-img"
+                                src="./assets/images/services/design.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="accordion-text">
+                            <ul>
+                                <li>
+                                    • User-centered design for products and
+                                    services
+                                </li>
+                                <li>
+                                    • UI/UX design for an appealing and
+                                    intuitive user experience
+                                </li>
+                                <li>
+                                    • Graphic design for branding, advertising
+                                    materials, and marketing campaigns
+                                </li>
+                                <li>
+                                    • Prototyping and visualization of design
+                                    concepts
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-heading-block">
+                            <h3 class="accordion-heading">Code</h3>
+                            <img
+                                class="accordion-img"
+                                src="./assets/images/services/code.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="accordion-text">
+                            <ul>
+                                <li>
+                                    • Software development for web applications,
+                                    mobile apps, or individual software
+                                    solutions
+                                </li>
+                                <li>
+                                    • Front-end and back-end development for
+                                    seamless functionality
+                                </li>
+                                <li>
+                                    • Agile development methods for fast
+                                    iterations and continuous improvements
+                                </li>
+                                <li>
+                                    • Quality assurance and testing to ensure
+                                    high product reliability
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-heading-block">
+                            <h3 class="accordion-heading">Support</h3>
+                            <img
+                                class="accordion-img"
+                                src="./assets/images/services/talk.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="accordion-text">
+                            <ul>
+                                <li>
+                                    • Customer support and helpdesk for
+                                    technical queries and problem solving
+                                </li>
+                                <li>
+                                    • Maintenance and updating of software
+                                    products for optimal performance
+                                </li>
+                                <li>
+                                    • Training and resources for customers to
+                                    effectively use the solutions provided
+                                </li>
+                                <li>
+                                    • Consulting services and strategic support
+                                    for long-term success
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact-form-container">
+                    <button class="primary-btn">Let's create dreams</button>
+                </a>
+            </section>
+            <section
+                id="partners"
+                class="hide-content center-content-for-fade-in"
+            >
+                <h2 class="h2-heading fix-infinite-h2">
+                    We've been <br />
+                    working with ...
+                </h2>
+                <div>
+                    <div id="partner-carousel">
+                        <img
+                            src="./assets/images/partners/Amsterdam-colored.svg"
+                            alt=""
+                        />
+                        <img
+                            src="./assets/images/partners/Berlin-colored.svg"
+                            alt=""
+                        />
+                        <img
+                            src="./assets/images/partners/colorado-colored.svg"
+                            alt=""
+                        />
+                        <img
+                            src="./assets/images/partners/lux-colored.svg"
+                            alt=""
+                        />
+                        <img
+                            src="./assets/images/partners/Manila-colored.svg"
+                            alt=""
+                        />
+                        <img
+                            src="./assets/images/partners/theo-colored.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <section
+                id="partner-reviews"
+                class="hide-content center-content-for-fade-in"
+            >
+                <h2 class="h2-heading">
+                    What our partners <br />
+                    have to say about us ...
+                </h2>
+                <div id="review-container">
+                    <article class="review-card hide-content">
+                        <div class="review-text">
+                            <h3 class="review-heading">
+                                <span class="pink-text">A</span>msterdan <br />
+                                Inc.
+                            </h3>
+                            <p>
+                                "From conceptualization to execution, Digital
+                                Dreams managed every aspect with precision and
+                                promptness. Their performance not only met but
+                                exceeded our expectations, setting a new
+                                standard for project completion."
+                            </p>
+                            <i
+                                >• Takahashi Murasame, <br />
+                                Lead Manager at Amsterdam, Inc</i
+                            >
+                        </div>
+                        <div class="review-img-wrapper">
+                            <img
+                                class="review-img"
+                                src="./assets/images/reviews/murasame.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </article>
+                    <article class="review-card hide-content">
+                        <div class="review-text">
+                            <h3 class="review-heading">
+                                <span class="pink-text">M</span>anila.
+                            </h3>
+                            <p>
+                                "Digital Dreams seamlessly handled the entire
+                                process from ideation to implementation,
+                                demonstrating remarkable timeliness. Their
+                                delivery went above and beyond, surpassing our
+                                initial expectations."
+                            </p>
+                            <i
+                                >• Arya Chandha, <br />
+                                Product Manager at Manila.</i
+                            >
+                        </div>
+                        <div class="review-img-wrapper">
+                            <img
+                                class="review-img"
+                                src="./assets/images/reviews/chandha.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </article>
+                    <article class="review-card hide-content">
+                        <div class="review-text">
+                            <h3 class="review-heading">
+                                <span class="pink-text">L</span>ux
+                            </h3>
+                            <p>
+                                "Throughout the journey from conception to
+                                realization, Digital Dreams exhibited
+                                unparalleled proficiency and punctuality. They
+                                not only met but surpassed our expectations.
+                            </p>
+                            <i>
+                                • Chester Willwood, <br />
+                                CEO of Lux, Media</i
+                            >
+                        </div>
+                        <div class="review-img-wrapper">
+                            <img
+                                class="review-img"
+                                src="./assets/images/reviews/willwood.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="about" class="hide-content center-content-for-fade-in">
+                <div class="about-img">
+                    <img src="./img/digdreams.jpg" alt="" />
+                </div>
+                <div class="about-text">
+                    <h2 class="h2-heading">About Us</h2>
+                    <p>
+                        DigitalDreams was founded in 2015 by us, Lisa Wagner and
+                        Tim Mayer. As experienced web designers, we share a
+                        common passion for innovative technologies and creative
+                        solutions.
+                        <br />
+                        <br />
+                        Our journey began with the desire to create something
+                        unique and to assist businesses in optimizing their
+                        digital presence. Through our expertise and knowledge,
+                        we have established a reputation in the industry.
+                        <br />
+                        <br />
+                        We place great importance on collaborating closely with
+                        our clients to understand their goals and develop
+                        tailored solutions.
+                    </p>
+                    <a href="#contact-form-container">
+                        <button class="primary-btn" type="button">
+                            Contact Us
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <section id="blog" class="hide-content center-content-for-fade-in">
+                <div class="blog-heading">
+                    <span>Your Guide Through the Digital World!</span>
+                    <h3>Blog</h3>
+                </div>
+                <div class="blog-container">
+                    <div class="blog-box hide-content">
+                        <div class="blog-img">
+                            <img src="img/img1.jpg" alt="Blog" />
+                        </div>
+                        <div class="blog-text">
+                            <span> May 10th, 2024</span>
+                            <a href="#" class="blog-title"
+                                >The Future of Digital Agencies: Innovation,
+                                Creativity, and Technology in Focus</a
+                            >
+                            <p>
+                                Today, the digital landscape is more dynamic
+                                than ever before. In an era where technology and
+                                trends are constantly evolving, digital agencies
+                                face the challenge of staying innovative and
+                                developing creative solutions that inspire their
+                                clients.
+                            </p>
+                            <a href="#"> Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-box hide-content">
+                    <div class="blog-img">
+                        <img src="img/img2.jpg" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span> May 17th, 2024 </span>
+                        <a href="#" class="blog-title"
+                            >Success through data-driven strategies</a
+                        >
+                        <p>
+                            Data is the currency of the digital age. Digital
+                            agencies that harness data as fuel for innovation
+                            are able to gain deeper insights into their target
+                            audience's behavior and develop innovative
+                            solutions.
+                        </p>
+                        <a href="#"> Read More</a>
+                    </div>
+                </div>
+                <div class="blog-box hide-content">
+                    <div class="blog-img">
+                        <img src="img/img3.jpg" alt="Blog" />
+                    </div>
+                    <div class="blog-text">
+                        <span> May 24th, 2024 </span>
+                        <a href="#" class="blog-title"
+                            >The Revolution of Artificial Intelligence</a
+                        >
+                        <p>
+                            Artificial Intelligence (AI) is undoubtedly one of
+                            the most revolutionary technologies of our time,
+                            with the potential to fundamentally change the way
+                            we approach marketing. Digital agencies are at the
+                            forefront of this revolution, leveraging AI to
+                            enhance their services and provide their clients
+                            with a competitive edge.
+                        </p>
+                        <a href="#"> Read More</a>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="contact-form-container"
+                class="hide-content center-content-for-fade-in"
+            >
+                <form id="contact-form" class="hide-content" novalidate>
+                    <h2 class="h2-heading">Get In Touch</h2>
+                    <div>
+                        <input
+                            id="full-name"
+                            class="input-field"
+                            type="text"
+                            placeholder="Full Name"
+                        />
+                        <label for="full-name">Full Name</label>
+                    </div>
+                    <div>
+                        <input
+                            id="email"
+                            class="input-field"
+                            type="email"
+                            placeholder="Email"
+                        />
+                        <label for="email">Email</label>
+                    </div>
+                    <div>
+                        <input
+                            id="adress"
+                            class="input-field"
+                            type="text"
+                            placeholder="Adress"
+                        />
+                        <label for="adress">Adress</label>
+                    </div>
+                    <div>
+                        <input
+                            id="zip-code"
+                            class="input-field"
+                            type="text"
+                            placeholder="ZIP code"
+                        />
+                        <label for="zip-code">ZIP code</label>
+                    </div>
+                    <div>
+                        <input
+                            id="city"
+                            class="input-field"
+                            type="text"
+                            placeholder="City"
+                        />
+                        <label for="city">City</label>
+                    </div>
+                    <div>
+                        <textarea
+                            id="text-area"
+                            class="input-field"
+                            placeholder="Tell us about your project"
+                            rows="15"
+                        ></textarea>
+                        <label for="text-area">Message</label>
+                    </div>
+                    <small class="submit-error"></small>
+                    <button class="primary-btn" type="submit">Submit</button>
+                </form>
+                <div id="contact-form-img" class="hide-content">
+                    <img
+                        src="./assets/images/form/carlhauser-hPv4ark8g0E-unsplash.jpg"
+                        alt=""
+                    />
+                    <h2 id="contact-form-heading">
+                        create your dreams<br />
+                        into a<br />
+                        sharp reality<br />
+                        with us
+                    </h2>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="column">
+                <h3>Office</h3>
+                <p>An der Wiener Straße 12,<br />1010 Wien</p>
+                <p>office@digitaldreams.com</p>
+                <p>+43 1 40 234 1111</p>
+            </div>
+            <div class="column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img
+                            width="50"
+                            height="50"
+                            src="./assets/images/footer/facebook.svg"
+                            alt="Facebook"
+                        />
+                    </a>
+                    <a href="https://www.instagram.com/"
+                        ><img
+                            width="50"
+                            height="50"
+                            src="./assets/images/footer/instagram.svg"
+                            alt="instagram-new--v1"
+                    /></a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img
+                            width="50"
+                            height="50"
+                            src="./assets/images/footer/linkedin.svg"
+                            alt="LinkedIn"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+        </footer>
+    </body>
+</html>

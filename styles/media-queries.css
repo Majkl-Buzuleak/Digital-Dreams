@@ -1,0 +1,40 @@
+@media screen and (min-width: 1200px) {
+    .dropdown-nav {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* HEADER */
+    nav .nav-ul {
+        display: none;
+    }
+
+    .toggle-nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* contact form*/
+    #contact-form-container {
+        flex-wrap: wrap;
+        margin-top: 20%;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    #contact-form-img {
+        aspect-ratio: 4 / 5;
+        width: 100%;
+    }
+
+    /* accordion*/
+    .accordion-container .accordion-content.active .accordion-text {
+        height: 270px;
+    }
+  
+}
